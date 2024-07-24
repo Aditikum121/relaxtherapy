@@ -136,11 +136,7 @@ STATICFILES_DIRS = [
     BASE_DIR , "static"
 ]
 
-EMAIL_HOST='smtp.gmail.com'
-EMAIL_PORT='587'
-EMAIL_HOST_USER= 'ce22b001@iittp.ac.in'
-EMAIL_HOST_PASSWORD= 'Adarsh2002@'
-EMAIL_USE_TLS=True
+
 
 
 LOGIN_URL = 'login'  # URL to redirect when a user is not logged in

@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>FRONT_PAGE</title>
+    <link rel="stylesheet" href="/static/main.css">
+    
+    
+</head>
+<body >
+   
+       
+    <div id="navbar" >
+        
+        <a id="Name">Guider_sphere</a>
+        
+        <li>
+           <li class= "{% if request.path == '/' %}active{% endif %}"> <a  id="Details" href="/">HOME </a></li>
+           <li  class= "{% if request.path == 'aboutus' %}active{% endif %}"> <a id="Details" href="/aboutus">ABOUT_US </a></li>
+           <li><a id="Details" href="#">RESOURCES</a></li>
+           <li><a id="Details" href="#">FAQs</a> </li>
+           <li><a id="Details" href="#">CONTACT_US</a></li>
+        </li>
+    </section>
+    <div id="sear">
+        <form action="">
+            <input type="text" name="search" value="">
+            <input type="submit" value="Search">
+        </form>
+    </div>
+   
+        
+    </body>
+

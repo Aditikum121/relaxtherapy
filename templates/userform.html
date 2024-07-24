@@ -1,0 +1,31 @@
+{% include "header.html" %}
+<h1>USERFORM</h1>
+
+<body>
+    <div class="row">
+        <div class="12-col">
+        <form method="post" action="{% url 'submitform' %}">
+           {% csrf_token %}
+           {{form}}
+            <!-- <div>
+                <label for="">num1</label>
+                <input type="text" name="num1"  class="form-controle">
+                <br>
+            </div>
+            <div>
+            <label for="">num2</label>
+            <input type="text" name="num2"  class="formcontrole">
+            
+        </div> -->
+        <button  type="submit">Submit</button>
+          <div>
+            output
+            <input type="text" value="{{output}}">
+          </div>
+        </form>
+    </div>
+    </div>
+    
+</body>
+<br>
+{% include "footer.html" %}

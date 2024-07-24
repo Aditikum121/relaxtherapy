@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <h1> Eductaional Sphere</h1>
+</head>
+<body>
+     {% for n in clist%}
+     <div>{{n}}</div>
+     {% endfor %}
+
+     <table border="1" cellpadding="10">
+        <tr>
+            <th>NAME</th>
+            <th>AGE</th>
+
+        </tr>
+        {%for d in student_name%}
+        <tr>
+            <td>{{d.name}}</td>
+            <td>{{d.Age}}</td>
+        </tr>
+        {%endfor%}
+     </table>
+     {%for n in number %}
+        {% if n > 20 %}
+        <div> {{n}}</div>
+        {% endif%}
+
+        {%endfor %}
+     
+</body>
+</html>

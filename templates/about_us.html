@@ -1,0 +1,31 @@
+{% include "header.html" %}
+
+<style>
+    #bg{
+        background-color: rgb(241, 245, 242);
+        color: rgba(20, 20, 2, 0.836);
+        width: 100%;
+        font-size: 50px;
+        padding-top: 20px;
+        
+    }
+    #h1{
+        margin-top: 40px;
+    }
+</style>
+<h1 id="h1">
+    {{newsdetails.news_title}}
+    <!-- ABOUT_US -->
+</h1>
+<body id="bg">
+    {{output}}
+    {{newsdetails.news_desc |safe }} 
+    <div class="col-6">
+        
+        <img src="/media/news/LEFT_VIEW.jpg" alt="">
+    </div>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus a aut dolore quaerat minus, aspernatur officiis, inventore ut necessitatibus ducimus incidunt animi architecto odit veniam dolorum illum repellendus magni vitae distinctio aperiam error, sunt provident libero. Nesciunt ipsum ex qui, blanditiis necessitatibus, minus odit nulla quam atque nobis quasi et suscipit iusto odio exercitationem ab corrupti voluptate quos officia illo. Numquam officiis perspiciatis voluptates 
+    culpa earum dolorem. Id dicta perferendis quidem, ea fugiat nisi quos deserunt.
+</body>
+
+{% include "footer.html" %}

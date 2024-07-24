@@ -1,0 +1,38 @@
+<!-- templates/vedios/video_list.html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Video List</title>
+</head>
+<body>
+    <h1>Video List</h1>
+    <ul>
+        {% for video in videos %}
+            <li>{{ video.title }}</li>
+                    <li>{{ video_file }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Video List</title>
+</head>
+<body>
+    <h1>Uploaded Videos</h1>
+    <ul>
+        {% for video in videos %}
+            <li>
+                <h2>{{ video.title }}</h2>
+                <video width="320" height="240" controls>
+                    <source src="{{ video.video_file.url }}" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p>Uploaded at: {{ video.uploaded_at }}</p>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

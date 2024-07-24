@@ -1,0 +1,73 @@
+{% include "header.html" %}
+<style>
+    #description1{
+        color: bisque;
+        background-color: black;
+        margin-top: 2px;
+        border-color: brown;
+      
+
+    }
+    #des1{
+        color: beige;
+        background-color: black;
+        margin-top: 2px;
+        border-color: brown;
+    }
+    
+</style>
+
+<body>
+    
+   <marquee behavior="" direction="" onmouseover="stop()" onmouseout="Start()">
+    {% for n in newsdata%}
+    WELCOME TO GUIDER_SPACE &nbsp,&nbsp;
+    
+    <a href="/newsDetail/{{n.news_slug}}"> {{n.news_title}} </a>
+    {% endfor %}
+   </marquee>
+   
+    
+  
+    <div id="Front">
+        <h2>CAPTIVATE YOUR DREAMS WITH US... </h2>
+        <button><a href="target">Click Me</a></button>
+    </div>
+    
+    </div>
+    <div id="">
+        <div id="content">
+            <h3>WELCOME</h3>
+            <!-- <ul > -->
+                <div id="des1">
+                <li>
+                    <div class="college">
+                         UNIVERSITY STUDENTS
+                          <p id="description1">
+                            Past year paper , lab report and Notes etc
+                          </p>  
+                  </div>
+            </li>
+                <li>
+                    <div class="Jee ">
+                        JEE ASPIRANT
+                        <p id="description1">
+                          Past year paper , Study material ,Guider ,Student community
+                        </p>  
+                </div>
+                </li>
+                <li>
+                    <div class="other ">
+                       OTHER EXAMINATION
+                        <p id="description1">
+                          Past year paper , Study material ,Guider ,Student community
+                        </p>  
+                </div>
+                </li>
+            </div> 
+       
+    </div>  
+    </div>
+ </body>
+          {% include "footer.html" %}
+

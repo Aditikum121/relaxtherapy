@@ -1,0 +1,47 @@
+{% include "header.html" %}
+<style>
+#cal{
+    margin-top: 10px;
+}
+
+</style>
+<body>
+    
+        <div id="cal">
+            
+            <form action="" method="post">
+
+                {% csrf_token %}
+                    <label for="">value 1</label>
+                    <input type="text" name="num1" >
+                    <br>
+                    <label for="">opr1</label>
+                    <div>
+                        <select name="opr" id="">
+                            <option value="+">+</option>
+                            <option value="-">-</option>
+                            <option value="*">*</option>
+                            <option value="/">/</option>
+                        </select>
+                           <label for="">value 2</label>
+                          <input type="text" name="num2" >
+                        
+                        <button type="submit">submit</button>
+                            <br>
+                        <label for="">output</label>
+                        <input type="text"  value="{{c}}">
+
+
+                    </div>
+                    
+                    
+                   
+
+            </form>
+        </div>
+
+   
+
+</body>
+</html>
+<!-- {% include "footer.html" %} -->
